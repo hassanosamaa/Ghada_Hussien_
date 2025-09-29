@@ -1,0 +1,69 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg_dark{
+  @apply bg-gray-950
+}
+
+
+
+
+.btn{
+  @apply bg-gray-900 px-4 py-[5px] rounded-xl
+  hover:bg-gray-800 
+   text-gray-400
+}
+
+.check{
+  @apply bg-gray-800 border border-sky-700 text-gray-50
+}
+
+.skill{
+  @apply text-[80px] 
+}
+.language-changer-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.language-icon {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+
+.language-select {
+  appearance: none;
+  background-color: #1e1e2f;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 6px 28px 6px 10px; 
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.language-changer-container::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+
+.language-select:hover {
+  border-color: white;
+}
+
+.language-select:focus {
+  border-color: #4cafef;
+  box-shadow: 0 0 0 2px rgba(76, 175, 239, 0.4);
+}
